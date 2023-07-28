@@ -29,11 +29,11 @@ img {
   width: 100%; */
 
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4,300px);
   gap: 10px;
   background-color: black;
   padding: .5rem;
-  width: 100%;
+  width: 100vw;
 
 }
 
@@ -54,7 +54,7 @@ button{
 button:hover{
   background-color:rgb(174, 149, 6);
 }
-@media (max-width: 767px) {
+@media (max-width: 820px) {
   
   .app{
     display: flex;
@@ -65,7 +65,7 @@ button:hover{
   }
   .movies {
     display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: repeat(2,1fr) ;
   gap: 10px;
   background-color:black;
   padding: .5rem;
