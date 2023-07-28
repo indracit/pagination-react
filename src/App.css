@@ -23,13 +23,25 @@ img {
 }
 
 .movies {
-  display: flex;
+  /* display: flex;
   place-content: center space-evenly;
   align-items: center;
+  width: 100%; */
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: black;
+  padding: .5rem;
   width: 100%;
 
 }
 
+.movie-card{
+  margin: .5rem;
+  background-color: gold;
+  padding: .5rem;
+}
 button{
   padding: .5rem;
   margin: .5rem;
@@ -52,9 +64,11 @@ button:hover{
     height: 800px;
   }
   .movies {
-    display: flex;
-    flex-direction: column;
-    place-content: center space-evenly;
-    align-items: center;
+    display: grid;
+  grid-template-columns: auto auto ;
+  gap: 10px;
+  background-color:black;
+  padding: .5rem;
+  width: 100vw;
   }
 }

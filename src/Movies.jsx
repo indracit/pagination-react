@@ -6,11 +6,11 @@ const options = {
     method: 'GET',
     url: 'https://imdb_api4.p.rapidapi.com/get_movies_by_cast_name',
     headers: {
-      'X-RapidAPI-Key': 'f42e38bef3mshb5ce3fe77ae532cp1093d1jsn080c0a1b8801',
-      'X-RapidAPI-Host': 'imdb_api4.p.rapidapi.com'
+        'X-RapidAPI-Key': 'f42e38bef3mshb5ce3fe77ae532cp1093d1jsn080c0a1b8801',
+        'X-RapidAPI-Host': 'imdb_api4.p.rapidapi.com'
     }
-  };
-  
+    };
+
 
 
 
@@ -48,8 +48,8 @@ const Movies = () => {
 
             <div className='movies'>
             {movies.slice(page * 10 - 10 , page * 10 ).map((movie)=> (
-                <div  key={movie.id}>
-                    <p>{movie.title}</p>
+                <div className = 'movie-card' key={movie.id}>
+                    <p> {movie.title} </p>
                 </div>
             ))}
             </div>
